@@ -22760,11 +22760,11 @@ var Main = function (_React$Component) {
             });
 
             var numbers = [];
-            if (this.state.currentPage === 414) {
+            if (this.state.currentPage === 414 || this.state.currentPage === 2) {
                 for (var i = this.state.currentPage - 1; i <= this.state.currentPage + 3; i++) {
                     numbers.push(i);
                 }
-            } else if (this.state.currentPage === 415) {
+            } else if (this.state.currentPage === 415 || this.state.currentPage >= 3) {
                 for (var _i = this.state.currentPage - 2; _i <= this.state.currentPage + 2; _i++) {
                     numbers.push(_i);
                 }
@@ -22776,17 +22776,9 @@ var Main = function (_React$Component) {
                 for (var _i3 = this.state.currentPage - 4; _i3 <= this.state.currentPage; _i3++) {
                     numbers.push(_i3);
                 }
-            } else if (this.state.currentPage >= 3) {
-                for (var _i4 = this.state.currentPage - 2; _i4 <= this.state.currentPage + 2; _i4++) {
-                    numbers.push(_i4);
-                }
-            } else if (this.state.currentPage === 2) {
-                for (var _i5 = this.state.currentPage - 1; _i5 <= this.state.currentPage + 3; _i5++) {
-                    numbers.push(_i5);
-                }
             } else if (this.state.currentPage === 1) {
-                for (var _i6 = this.state.currentPage; _i6 <= this.state.currentPage + 4; _i6++) {
-                    numbers.push(_i6);
+                for (var _i4 = this.state.currentPage; _i4 <= this.state.currentPage + 4; _i4++) {
+                    numbers.push(_i4);
                 }
             }
 
@@ -22819,7 +22811,11 @@ var Main = function (_React$Component) {
                                     'Welcome back!'
                                 )
                             ),
-                            _react2.default.createElement('td', null)
+                            _react2.default.createElement(
+                                'td',
+                                null,
+                                'Click on title to show image'
+                            )
                         ),
                         renderPhotos
                     )

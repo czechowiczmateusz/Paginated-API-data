@@ -56,11 +56,11 @@ class Main extends React.Component {
         });
 
         const numbers = [];
-        if(this.state.currentPage === 414) {
+        if(this.state.currentPage === 414 || this.state.currentPage === 2) {
             for (let i = this.state.currentPage - 1; i <= this.state.currentPage + 3; i++) {
                 numbers.push(i);
             }
-        } else if(this.state.currentPage === 415) {
+        } else if(this.state.currentPage === 415 || this.state.currentPage >= 3) {
             for (let i = this.state.currentPage - 2; i <= this.state.currentPage + 2; i++) {
                 numbers.push(i);
             }
@@ -70,14 +70,6 @@ class Main extends React.Component {
             }
         } else if(this.state.currentPage === 417) {
             for (let i = this.state.currentPage - 4; i <= this.state.currentPage; i++) {
-                numbers.push(i);
-            }
-        } else if(this.state.currentPage >= 3) {
-            for (let i = this.state.currentPage - 2; i <= this.state.currentPage + 2; i++) {
-                numbers.push(i);
-            }
-        } else if(this.state.currentPage === 2) {
-            for (let i = this.state.currentPage - 1; i <= this.state.currentPage + 3; i++) {
                 numbers.push(i);
             }
         } else if(this.state.currentPage === 1) {
@@ -100,7 +92,7 @@ class Main extends React.Component {
                     <tbody>
                     <tr>
                         <td><h1>Welcome back!</h1></td>
-                        <td></td>
+                        <td>Click on title to show image</td>
                     </tr>
                     {renderPhotos}
                     </tbody>
