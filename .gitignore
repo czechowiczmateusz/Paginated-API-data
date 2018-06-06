@@ -57,10 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# webpack
-
-webpack.config.js
-
 # idea
 
 .idea
