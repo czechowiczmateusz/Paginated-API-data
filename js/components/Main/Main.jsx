@@ -60,7 +60,7 @@ class Main extends React.Component {
             for (let i = this.state.currentPage - 1; i <= this.state.currentPage + 3; i++) {
                 numbers.push(i);
             }
-        } else if(this.state.currentPage === 415 || this.state.currentPage >= 3) {
+        } else if(this.state.currentPage === 415) {
             for (let i = this.state.currentPage - 2; i <= this.state.currentPage + 2; i++) {
                 numbers.push(i);
             }
@@ -70,6 +70,10 @@ class Main extends React.Component {
             }
         } else if(this.state.currentPage === 417) {
             for (let i = this.state.currentPage - 4; i <= this.state.currentPage; i++) {
+                numbers.push(i);
+            }
+        } else if(this.state.currentPage >= 3) {
+            for (let i = this.state.currentPage - 2; i <= this.state.currentPage + 2; i++) {
                 numbers.push(i);
             }
         } else if(this.state.currentPage === 1) {
