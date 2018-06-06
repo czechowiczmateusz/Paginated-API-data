@@ -1,0 +1,99 @@
+@import "reset";
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    tbody {
+      tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        @media only screen and (max-width: 800px) {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+        }
+        td {
+          width: 500px;
+          height: 160px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          border: 2px solid black;
+          a {
+            cursor: pointer;
+          }
+          img {
+            -webkit-clip-path: circle(60px at center);
+            clip-path: circle(60px at center);
+            &:hover {
+              -webkit-clip-path: none;
+              clip-path: none;
+            }
+          }
+          h1 {
+            text-align: center;
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    li {
+      height: 50px;
+      width: 50px;
+      font-size: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      cursor: pointer;
+      -webkit-transition: 1s background-color;
+      -o-transition: 1s background-color;
+      transition: 1s background-color;
+      &.active {
+        background-color: aqua;
+      }
+      &:hover {
+        background-color: #c9c9c9;
+      }
+    }
+  }
+}
